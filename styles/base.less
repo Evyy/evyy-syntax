@@ -179,7 +179,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.section.embedded {
-    color: darken(@red, 10%);
+    color: @light-orange;
   }
 
 }
@@ -211,15 +211,16 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @cyan;
   }
   &.name.type {
-    color: @syntax-text-color;
+    // color: @syntax-text-color;
+    color: @tan;
     text-decoration: underline;
   }
 
   &.other.inherited-class {
-    color: @green;
+    color: @rich-blue;
   }
   &.name.class, &.name.type.class {
-    color: @tan;
+    color: @light-orange;
   }
 
   &.name.section {
@@ -242,7 +243,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .meta {
   &.class {
-    color: @pale-cyan;
+    color: @syntax-text-color;
   }
 
   &.link {
@@ -297,6 +298,14 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .property{
   color: @blue;
+
+  &.other{
+      color:@rich-blue
+  }
+
+  &.constant{
+      color:@pale-purp
+  }
 }
 
 
